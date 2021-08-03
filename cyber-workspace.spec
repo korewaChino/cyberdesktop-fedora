@@ -13,6 +13,8 @@ BuildRequires:	extra-cmake-modules
 BuildRequires:	git
 BuildRequires:	pkgconf
 BuildRequires:	qt5-qttools polkit-devel polkit-qt5-1-devel libSM-devel xcb-util-image-devel libXtst-devel
+BuildRequires:	meuikit-devel
+BuildRequires:	QHotkey-devel QHotkey-static cmake(QHotkey)
 Requires:	kwayland
 Requires:	kwindowsystem
 Requires:	kwin
@@ -23,8 +25,9 @@ Requires:	polkit-qt5
 Requires:	meuikit
 Requires:	cyber-wallpapers
 Requires:	xdg-user-dirs
-#Requires:	qhotkey
+Requires:	QHotkey
 Source0:	https://git.omame.tech/CyberOS/cyber-workspace/archive/1.0.3.tar.gz
+
 %description
 Applications that build the Cyber Desktop environment
 
@@ -37,7 +40,6 @@ cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr .
 make %{?_smp_mflags}
 
 %install
-rm -rf $RPM_BUILD_ROOT
 %make_install
 
 %files 
