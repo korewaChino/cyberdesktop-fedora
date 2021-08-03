@@ -5,7 +5,7 @@ Summary:	CyberOS Libraries
 License:	GPL-3.0-or-later
 URL:		https://getcyberos.org
 BuildRequires:	cmake
-BuildRequires:	git kf5-networkmanager-qt-devel kf5-modemmanager-qt-devel libkscreen-qt5-devel kf5-kio-devel qt5-qtsensors-devel
+BuildRequires:	git kf5-networkmanager-qt-devel kf5-modemmanager-qt-devel libkscreen-qt5-devel kf5-kio-devel qt5-qtsensors-devel qt5-qtquickcontrols2-devel
 Requires:	qt5-qtbase
 Requires:	kf5-networkmanager-qt
 Requires:	kf5-modemmanager-qt
