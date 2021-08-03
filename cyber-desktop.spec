@@ -1,6 +1,6 @@
 Name:		cyber-desktop
 Version:	2021.05.20
-Release:	%{?dist}
+Release:	1%{?dist}
 Summary:	Metapackage for the Cyber Desktop Environment
 License:	GPL
 Group:	Metapackages
@@ -25,8 +25,6 @@ Requires:	cyber-calculator
 Requires:	cyber-edit
 %description
 A metapackage that install the Cyber Desktop Environment
-
-
 
 %changelog
 * Tue Aug 03 2021 korewaChino <crkza1134@gmail.com> - 2021.05.20

@@ -1,8 +1,12 @@
+%define debug_package %{nil}
+%define _build_id_links none
+%define _disable_source_fetch 0
+
 Name:		cyber-workspace
 Version:	1.0.3
-Release:	%{?dist}
+Release:	1%{?dist}
 Summary:	Cyber Workspace
-License:	GPL-3.0-or-later
+License:	GPLv3+
 URL:		https://getcyberos.org
 BuildRequires:	cmake
 BuildRequires:	extra-cmake-modules
@@ -20,46 +24,40 @@ Requires:	meuikit
 Requires:	cyber-wallpapers
 Requires:	xdg-user-dirs
 #Requires:	qhotkey
-%undefine _disable_source_fetch
 Source0:	https://git.omame.tech/CyberOS/cyber-workspace/archive/1.0.3.tar.gz
 %description
-%define debug_package %{nil}
-%define _build_id_links none
+Applications that build the Cyber Desktop environment
+
 %prep
 %setup -qn %{name}
 
-
-
-
 %build
+%{set_build_flags}
 cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr .
-make
+make %{?_smp_mflags}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 %make_install
 
-
-
-
 %files 
 %license LICENSE
 /etc/xdg/autostart/cyber-polkit-agent.desktop
-/usr/bin/cyber-desktop-daemon
-/usr/bin/cyber-hotkeys
-/usr/bin/cyber-notification-daemon
-/usr/bin/cyber-polkit-agent
-/usr/bin/cyber-screen-brightness
-/usr/bin/cyber-session
-/usr/bin/cyber-settings-daemon
-/usr/bin/cyber-shutdown
-/usr/bin/cyber-xembedsniproxy
-/usr/share/cyber-desktop-daemon
-/usr/share/cyber-polkit-agent/
-/usr/share/cyber-settings-daemon/
-/usr/share/cyber-shutdown/
-/usr/share/polkit-1/actions/org.cyber.brightness.pkexec.policy
-/usr/share/xsessions/cyber-xsession.desktop
+%{_bindir}/cyber-desktop-daemon
+%{_bindir}/cyber-hotkeys
+%{_bindir}/cyber-notification-daemon
+%{_bindir}/cyber-polkit-agent
+%{_bindir}/cyber-screen-brightness
+%{_bindir}/cyber-session
+%{_bindir}/cyber-settings-daemon
+%{_bindir}/cyber-shutdown
+%{_bindir}/cyber-xembedsniproxy
+%{_datadir}/cyber-desktop-daemon
+%{_datadir}/cyber-polkit-agent/
+%{_datadir}/cyber-settings-daemon/
+%{_datadir}/cyber-shutdown/
+%{_datadir}/polkit-1/actions/org.cyber.brightness.pkexec.policy
+%{_datadir}/xsessions/cyber-xsession.desktop
 %changelog
 * Tue Aug 03 2021 korewaChino <crkza1134@gmail.com> - 1.0.3
 - Initial version

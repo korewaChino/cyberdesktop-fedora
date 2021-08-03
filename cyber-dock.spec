@@ -1,8 +1,12 @@
+%define debug_package %{nil}
+%define _build_id_links none
+%define _disable_source_fetch 0
+
 Name:		cyber-dock
 Version:	1.0.0
-Release:	%{?dist}
+Release:	1%{?dist}
 Summary:	The Cyber Desktop Dock
-License:	GPL-3.0-or-later
+License:	GPLv3+
 URL:		https://getcyberos.org
 BuildRequires:	cmake
 BuildRequires:	git
@@ -13,15 +17,15 @@ Requires:	qt5-qtquickcontrols2
 Requires:	kf5-kwindowsystem
 Requires:	meuikit
 Requires:	libcyber-system
-%undefine _disable_source_fetch
 Source0:	https://git.omame.tech/CyberOS/cyber-dock/archive/1.0.0.tar.gz
 %description
-%global debug_package %{nil}
+The dock for Cyber Desktop
 
 %prep
 %setup -qn %{name}
 
 %build
+%{set_build_flags}
 cmake -B .
 %make_build
 
@@ -30,11 +34,10 @@ rm -rf $RPM_BUILD_ROOT
 %make_install
 
 
-
 %files
 %license LICENSE
-/usr/share/cyber-dock/
-/usr/bin/cyber-dock
+%{_datadir}/cyber-dock/
+%{_bindir}/cyber-dock
 
 
 %changelog
