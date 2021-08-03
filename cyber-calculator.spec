@@ -10,7 +10,7 @@ License:	GPLv3+
 URL:		https://getcyberos.org
 BuildRequires:	cmake
 BuildRequires:	git
-BuildRequires:	qt5-qttools
+BuildRequires:	qt5-qttools qt5-qtdeclarative-devel
 Requires:	qt5-qtbase
 Requires:	qt5-qtquickcontrols2
 Requires:	meuikit
