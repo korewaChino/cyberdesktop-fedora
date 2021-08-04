@@ -9,7 +9,7 @@ Summary:	KWin Plugins for Cyber Desktop
 License:	GPLv3+
 URL:		https://getcyberos.org
 BuildRequires:	cmake
-BuildRequires:  extra-cmake-modules qt5-qtbase qt5-qtdeclarative kf5-kwindowsystem-devel kdecoration-devel
+BuildRequires:  extra-cmake-modules qt5-qtbase qt5-qtdeclarative kf5-kwindowsystem-devel kdecoration-devel qt5-linguist
 Requires:	kwayland
 Requires:	qt5-qtbase
 Requires:	qt5-qtdeclarative

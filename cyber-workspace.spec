@@ -12,7 +12,8 @@ BuildRequires:	cmake
 BuildRequires:	extra-cmake-modules
 BuildRequires:	git
 BuildRequires:	pkgconf
-BuildRequires:	qt5-qttools polkit-devel polkit-qt5-1-devel libSM-devel xcb-util-image-devel libXtst-devel
+BuildRequires:	polkit-devel polkit-qt5-1-devel libSM-devel xcb-util-image-devel libXtst-devel qt5-linguist
+BuildRequires:	qt5-qttools qt5-qttools-devel qt5-qtdeclarative-devel qt5-qtquickcontrols2-devel qt5-linguist
 BuildRequires:	meuikit-devel
 BuildRequires:	QHotkey-devel QHotkey-static cmake(QHotkey)
 Requires:	kwayland
