@@ -13,7 +13,7 @@ BuildRequires:  extra-cmake-modules qt5-qtbase-devel qt5-qtdeclarative-devel qt5
 BuildRequires:	kf5-kwayland-devel kf5-kconfig kf5-kcoreaddons-devel kf5-kguiaddons-devel kf5-kconfigwidgets-devel kf5-kwindowsystem-devel
 BuildRequires:	kdecoration-devel
 Requires:	kwayland-integration kwin
-Requires:	kconfigwidgets
+Requires:	kf5-kconfigwidgets
 Source0:	https://git.omame.tech/CyberOS/cyber-kwin-plugins/archive/%{version}.tar.gz
 %description
 KWin Plugins for the Cyber Desktop
