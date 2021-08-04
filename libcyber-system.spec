@@ -4,16 +4,12 @@
 
 Name:		libcyber-system
 Version:	1.0.0
-Release:	1%{?dist}
+Release:	0a%{?dist}
 Summary:	CyberOS Libraries
 License:	GPLv3+
 URL:		https://getcyberos.org
 BuildRequires:	cmake
-BuildRequires:	git qt5-qtquickcontrols2-devel kf5-networkmanager-qt-devel kf5-modemmanager-qt-devel libkscreen-qt5-devel kf5-kio-devel qt5-qtsensors-devel
-Requires:	qt5-qtbase
-Requires:	kf5-networkmanager-qt
-Requires:	kf5-modemmanager-qt
-Requires:	kscreen
+BuildRequires:	qt5-qtbase-devel qt5-qtquickcontrols2-devel kf5-networkmanager-qt-devel kf5-modemmanager-qt-devel libkscreen-qt5-devel kf5-kio-devel qt5-qtsensors-devel
 Source0:	https://git.omame.tech/CyberOS/libcyber-system/archive/1.0.0.tar.gz
 
 %description
