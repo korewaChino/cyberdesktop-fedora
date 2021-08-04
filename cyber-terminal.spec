@@ -4,17 +4,15 @@
 
 Name:		cyber-terminal
 Version:	1.0.0
-Release:	1%{?dist}
+Release:	0a%{?dist}
 Summary:	Cyber Terminal
 License:	GPLv3+
 URL:		https://getcyberos.org
 BuildRequires:	cmake
 BuildRequires:	extra-cmake-modules
 BuildRequires:	git
-BuildRequires:	qt5-qttools qt5-qttools-devel qt5-qtdeclarative-devel qt5-qtquickcontrols2-devel qt5-linguist
-Requires:	qt5-qtbase
-Requires:	qt5-qtquickcontrols2
-Requires:	qt5-qtgraphicaleffects
+BuildRequires:	qt5-qtbase-devel qt5-qttools-devel qt5-qtdeclarative-devel qt5-qtquickcontrols2-devel qt5-linguist
+BuildRequires:	meuikit-devel
 Requires:	meuikit
 Source0:	https://git.omame.tech/CyberOS/cyber-terminal/archive/1.0.0.tar.gz
 %description
