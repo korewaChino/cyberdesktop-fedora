@@ -11,7 +11,7 @@ License:        GPLv3+
 URL:            https://getcyberos.org
 Source0:        https://git.omame.tech/CyberOS/cyber-icon-theme/archive/1.0.0.tar.gz
 
-BuildRequires:  cmake make
+BuildRequires:  cmake make gcc gcc-c++
 Provides:				crule-icon-theme = 0.0.%{version}-%{release}
 
 %description
