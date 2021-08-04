@@ -4,16 +4,15 @@
 
 Name:		cyber-disk-usage
 Version:	1.0.0
-Release:	0a%{?dist}
+Release:	99%{?dist}
 Summary:	Cyber Disk Usage
 License:	GPLv3+
 URL:		https://getcyberos.org
 BuildRequires:	cmake
-BuildRequires:	git udisks2-qt5-devel
+BuildRequires:	udisks2-qt5-devel
 BuildRequires:	qt5-qttools qt5-qttools-devel qt5-qtdeclarative-devel qt5-qtquickcontrols2-devel qt5-linguist qt5-qtbase-devel
 BuildRequires:	meuikit-devel
-Source0:	https://git.omame.tech/CyberOS/cyber-disk-usage/archive/1.0.0.tar.gz
-BuildRoot: %{_tmppath}/%{name}
+Source0:	https://git.omame.tech/CyberOS/cyber-disk-usage/archive/%{version}.tar.gz
 %description
 Disk usage monitor application for Cyber Desktop
 

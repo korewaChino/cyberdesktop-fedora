@@ -17,7 +17,7 @@
 
 Name: QHotkey
 Version: 1.4.2
-Release: 0b%{?dist}
+Release: 99%{?dist}
 Summary: A global shortcut/hotkey for Desktop Qt-Applications
 License: BSD-3-Clause
 URL: https://github.com/Skycoder42/QHotkey

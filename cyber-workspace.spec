@@ -4,7 +4,7 @@
 
 Name:		cyber-workspace
 Version:	1.0.3
-Release:	0c%{?dist}
+Release:	99%{?dist}
 Summary:	Cyber Workspace
 License:	GPLv3+
 URL:		https://getcyberos.org
@@ -16,7 +16,7 @@ BuildRequires:	kf5-kwindowsystem-devel kf5-kwayland-devel
 BuildRequires:	meuikit-devel
 BuildRequires:	QHotkey-devel QHotkey-static
 Requires:	xdg-user-dirs
-Source0: https://git.omame.tech/CyberOS/cyber-workspace/archive/1.0.3.tar.gz
+Source0: https://git.omame.tech/CyberOS/cyber-workspace/archive/%{version}.tar.gz
 Patch0: https://github.com/korewaChino/cyberdesktop-fedora/raw/2b17b331be9e1bfd339df00a9a1495dbfd52e9e0/patches/cyber-workspace/0000-hotkeys-fix-cmakelists.patch
 
 %description

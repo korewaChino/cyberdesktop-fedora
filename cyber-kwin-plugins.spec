@@ -4,7 +4,7 @@
 
 Name:		cyber-kwin-plugins
 Version:	1.0.0
-Release:	0a%{?dist}
+Release:	99%{?dist}
 Summary:	KWin Plugins for Cyber Desktop
 License:	GPLv3+
 URL:		https://getcyberos.org
@@ -14,7 +14,7 @@ BuildRequires:	kf5-kwayland-devel kf5-kconfig kf5-kcoreaddons-devel kf5-kguiaddo
 BuildRequires:	kdecoration-devel
 Requires:	kwayland-integration kwin
 Requires:	kconfigwidgets
-Source0:	https://git.omame.tech/CyberOS/cyber-kwin-plugins/archive/1.0.0.tar.gz
+Source0:	https://git.omame.tech/CyberOS/cyber-kwin-plugins/archive/%{version}.tar.gz
 %description
 KWin Plugins for the Cyber Desktop
 

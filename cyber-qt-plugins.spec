@@ -1,6 +1,6 @@
 Name:		cyber-qt-plugins
 Version:	1.0.0
-Release:	0b%{?dist}
+Release:	99%{?dist}
 Summary:	Qt Plugins necessary for Cyber Desktop to work
 License:	GPLv3+
 URL:		https://getcyberos.org
@@ -11,7 +11,7 @@ BuildRequires:	cmake(Qt5Core) cmake(Qt5Widgets) cmake(Qt5DBus) cmake(Qt5X11Extra
 BuildRequires:	cmake(KF5WindowSystem)
 BuildRequires:	qt5-qtbase-static qt5-qtbase-private-devel
 
-Source0:	https://git.omame.tech/CyberOS/cyber-qt-plugins/archive/1.0.0.tar.gz 
+Source0:	https://git.omame.tech/CyberOS/cyber-qt-plugins/archive/%{version}.tar.gz 
 %description
 This package contains the Qt plugins necessary to make Cyber Desktop work
 

@@ -6,7 +6,7 @@
 
 Name: meuikit
 Version: 1.0.0
-Release: 2a%{?dist}
+Release: 99%{?dist}
 Summary: Cyber GUI Library
 
 License: GPLv3+
