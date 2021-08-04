@@ -11,7 +11,7 @@ URL:		https://getcyberos.org
 BuildRequires:	cmake
 BuildRequires:	git
 BuildRequires:	qt5-qtmultimedia-devel
-BuildRequires:	qt5-qttools qt5-qttools-devel qt5-qtdeclarative-devel qt5-qtquickcontrols2-devel qt5-linguist
+BuildRequires:	qt5-qttools qt5-qttools-devel qt5-qtdeclarative-devel qt5-qtquickcontrols2-devel qt5-linguist meuikit-devel
 Requires:	qt5-qtbase
 Requires:	qt5-qtquickcontrols2
 Requires:	qt5-qtmultimedia
