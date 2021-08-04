@@ -1,5 +1,5 @@
 Name:		cyber-desktop
-Version:	2021.05.20
+Version:	0.20210520
 Release:	99%{?dist}
 BuildArch: noarch
 Summary:	Metapackage for the Cyber Desktop Environment
