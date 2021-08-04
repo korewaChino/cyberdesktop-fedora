@@ -2,18 +2,21 @@
 %define _build_id_links none
 %define _disable_source_fetch 0
 
-Name:           meuikit
-Version:        1.0.0
-Release:        2%{?dist}
-Summary:        Cyber GUI Library
+%define _libdir32 %{_exec_prefix}/lib
 
-License:        GPLv3+
-URL:            https://getcyberos.org
+Name: meuikit
+Version: 1.0.0
+Release: 99%{?dist}
+Summary: Cyber GUI Library
 
-BuildRequires:  qt5-qtbase-devel qt5-qtquickcontrols2-devel qt5-qtx11extras-devel kf5-kwindowsystem-devel cmake make extra-cmake-modules
-Requires:       qt5-qtbase qt5-qtquickcontrols2 qt5-qtx11extras kf5-kwindowsystem
+License: GPLv3+
+URL: https://getcyberos.org
 
-Source0:        https://git.omame.tech/CyberOS/meuikit/archive/1.0.0.tar.gz
+BuildRequires: cmake make
+BuildRequires: extra-cmake-modules
+BuildRequires: qt5-qtbase-devel qt5-qtquickcontrols2-devel qt5-qtx11extras-devel kf5-kwindowsystem-devel cmake make extra-cmake-modules
+
+Source0: https://git.omame.tech/CyberOS/%{name}/archive/%{version}.tar.gz
 
 %description
 MeuiKit is the UI library for Cyber Desktop
@@ -21,7 +24,6 @@ MeuiKit is the UI library for Cyber Desktop
 %package devel
 Summary: Development headers for MeuiKit
 Requires: %{name} = %{version}-%{release}, cmake
-Provides: cmake(%{name})
 %description devel
 This package provides files sufficient to build software against %{name}
 
@@ -36,6 +38,8 @@ make %{?_smp_mflags}
 %install
 rm -rf $RPM_BUILD_ROOT
 %make_install
+mkdir -p %{buildroot}/%{_libdir}/cmake/
+mv -v %{buildroot}/%{_libdir32}/cmake/MeuiKit %{buildroot}/%{_libdir}/cmake/MeuiKit ||:
 
 %post
 /sbin/ldconfig
@@ -44,7 +48,7 @@ rm -rf $RPM_BUILD_ROOT
 /sbin/ldconfig
 
 %files devel
-/usr/lib/cmake/MeuiKit
+%{_libdir}/cmake/MeuiKit
 %{_libdir}/qt5/qml/MeuiKit/
 %{_libdir}/qt5/qml/QtQuick/Controls.2/meui-style/
 

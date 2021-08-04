@@ -4,24 +4,17 @@
 
 Name:		cyber-kwin-plugins
 Version:	1.0.0
-Release:	1%{?dist}
+Release:	99%{?dist}
 Summary:	KWin Plugins for Cyber Desktop
 License:	GPLv3+
 URL:		https://getcyberos.org
 BuildRequires:	cmake
-BuildRequires:  extra-cmake-modules qt5-qtbase qt5-qtdeclarative kf5-kwindowsystem-devel kdecoration-devel qt5-linguist
-Requires:	kwayland
-Requires:	qt5-qtbase
-Requires:	qt5-qtdeclarative
-Requires:	kf5-kwindowsystem
-Requires:	kf5-kwayland kwayland-integration
-Requires:	kwin
+BuildRequires:  extra-cmake-modules qt5-qtbase-devel qt5-qtdeclarative-devel qt5-linguist
+BuildRequires:	kf5-kwayland-devel kf5-kconfig kf5-kcoreaddons-devel kf5-kguiaddons-devel kf5-kconfigwidgets-devel kf5-kwindowsystem-devel
+BuildRequires:	kdecoration-devel
+Requires:	kwayland-integration kwin
 Requires:	kconfigwidgets
-Requires:	kf5-kcoreaddons
-Requires:	kf5-kguiaddons
-Requires:	kdecoration
-Requires:	kf5-kconfig
-Source0:	https://git.omame.tech/CyberOS/cyber-kwin-plugins/archive/1.0.0.tar.gz
+Source0:	https://git.omame.tech/CyberOS/cyber-kwin-plugins/archive/%{version}.tar.gz
 %description
 KWin Plugins for the Cyber Desktop
 

@@ -1,0 +1,10 @@
+14c14,16
+< find_library(QHotkey QHotkey REQUIRED)
+---
+> find_package(Qt5X11Extras REQUIRED)
+> find_library(X11 X11 REQUIRED)
+> find_library(QHotkey qhotkey REQUIRED)
+22a25
+> 	Qt5::X11Extras
+25a29
+> 	${X11}
