@@ -8,7 +8,7 @@ Release:	%{?dist}
 Summary:	Wallpapers included with the Cyber Desktop Environment
 License:	GPLv3+
 URL:		getcyberos.org
-BuildRequires:	cmake
+BuildRequires:	cmake gcc
 Source0:	https://git.omame.tech/CyberOS/cyber-wallpapers/archive/1.1.0.tar.gz
 BuildArch:  noarch
 BuildRoot: %{_tmppath}/%{name}

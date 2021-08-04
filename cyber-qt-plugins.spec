@@ -7,7 +7,7 @@ URL:		https://getcyberos.org
 BuildRequires:	cmake
 BuildRequires:	extra-cmake-modules libqtxdg-devel qt5-qtbase-devel libxcb-devel xcb-util-wm-devel qt5-qtbase-private-devel
 BuildRequires:	git
-BuildRequires:	qt5-qttools
+BuildRequires:	qt5-qttools qt5-qttools-devel qt5-qtdeclarative-devel qt5-qtquickcontrols2-devel qt5-linguist
 Requires:	qt5-qtbase
 Requires:	qt5-qtx11extras
 Requires:	libqtxdg
