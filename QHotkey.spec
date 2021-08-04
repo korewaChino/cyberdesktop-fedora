@@ -17,7 +17,7 @@
 
 Name: QHotkey
 Version: 1.4.2
-Release: 2%{?dist}
+Release: 0a%{?dist}
 Summary: A global shortcut/hotkey for Desktop Qt-Applications
 License: BSD-3-Clause
 URL: https://github.com/Skycoder42/QHotkey
@@ -32,16 +32,16 @@ This means your application can be active, inactive, minimized or not
 visible at all and still receive the shortcuts.
 
 %package static
-Summary:				Static libraries for %{name}
-Requires:				%{name} = %{version}
+Summary: Static libraries for %{name}
+Requires: %{name} = %{version}
 
 %description static
 Static libraries for %{name}
 
 %package devel
-Summary:        Development files for %{name}
-Requires:       %{name} = %{version}
-Provides:				cmake(QHotkey)
+Summary: Development files for %{name}
+Requires: %{name} = %{version}
+Provides: cmake(QHotkey)
 
 %description devel
 Development files for %{name} including headers and libraries
