@@ -11,7 +11,7 @@ Requires:	xorg-x11-server-Xorg
 Requires:	cyber-qt-plugins
 Requires:	cyber-kwin-plugins
 Requires:	cyber-workspace
-Requires:	cyber-wallpapers
+#Requires:	cyber-wallpapers
 Requires:	cyber-settings
 Requires:	cyber-icon-theme
 Requires:	cyber-dock
