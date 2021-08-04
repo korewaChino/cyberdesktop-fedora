@@ -4,13 +4,13 @@
 
 Name:		cyber-workspace
 Version:	1.0.3
-Release:	0a%{?dist}
+Release:	0c%{?dist}
 Summary:	Cyber Workspace
 License:	GPLv3+
 URL:		https://getcyberos.org
 BuildRequires:	cmake pkgconfig
 BuildRequires:	extra-cmake-modules
-BuildRequires:	polkit-devel polkit-qt5-1-devel libSM-devel xcb-util-image-devel libXtst-devel
+BuildRequires:	polkit-devel polkit-qt5-1-devel libSM-devel xcb-util-devel xcb-util-image-devel libXtst-devel pulseaudio-libs-devel
 BuildRequires:	qt5-qtbase-devel qt5-qtx11extras-devel qt5-qttools-devel qt5-qtdeclarative-devel qt5-qtquickcontrols2-devel qt5-linguist
 BuildRequires:	kf5-kwindowsystem-devel kf5-kwayland-devel
 BuildRequires:	meuikit-devel
