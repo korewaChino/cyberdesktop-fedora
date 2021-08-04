@@ -27,6 +27,9 @@ Requires:	cyber-edit
 %description
 A metapackage that install the Cyber Desktop Environment
 
+%install
+exit 0
+
 %changelog
 * Tue Aug 03 2021 korewaChino <crkza1134@gmail.com> - 2021.05.20
 - Initial version
