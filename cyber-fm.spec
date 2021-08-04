@@ -4,17 +4,21 @@
 
 Name:		cyber-fm
 Version:	1.0.0
-Release:	1%{?dist}
+Release:	0b%{?dist}
 Summary:	Cyber File Manager
 License:	GPLv3+
 URL:		https://getcyberos.org
-BuildRequires:	cmake
+BuildRequires:	cmake extra-cmake-modules
 BuildRequires:	git
-BuildRequires:	qt5-qttools qt5-qtbase-private-devel
+BuildRequires:	qt5-qttools qt5-qtbase-private-devel qt5-qtdeclarative-devel qt5-qtquickcontrols2-devel
+BuildRequires:	kf5-kio-devel
+BuildRequires:	meuikit-devel
 Requires:	qt5-qtbase
 Requires:	qt5-qtquickcontrols2
 Requires:	qt5-qtx11extras
+Requires: meuikit
 Requires:	taglib
+Requires: kf5-kio
 %undefine _disable_source_fetch
 Source0:	https://git.omame.tech/CyberOS/cyber-fm/archive/1.0.0.tar.gz
 %description
