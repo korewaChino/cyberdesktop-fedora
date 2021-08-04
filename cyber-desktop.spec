@@ -1,6 +1,7 @@
 Name:		cyber-desktop
 Version:	2021.05.20
 Release:	1%{?dist}
+BuildArch: noarch
 Summary:	Metapackage for the Cyber Desktop Environment
 License:	GPL
 Group:	Metapackages
