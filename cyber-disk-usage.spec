@@ -9,7 +9,7 @@ Summary:	Cyber Disk Usage
 License:	GPLv3+
 URL:		https://getcyberos.org
 BuildRequires:	cmake
-BuildRequires:	git
+BuildRequires:	git udisks2-qt5-devel
 BuildRequires:	qt5-qttools qt5-qttools-devel qt5-qtdeclarative-devel qt5-qtquickcontrols2-devel qt5-linguist
 Requires:	qt5-qtbase
 Requires:	qt5-qtquickcontrols2
