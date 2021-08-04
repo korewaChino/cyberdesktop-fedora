@@ -4,7 +4,7 @@
 
 Name:		cyber-dock
 Version:	1.0.0
-Release:	0a%{?dist}
+Release:	0b%{?dist}
 Summary:	The Cyber Desktop Dock
 License:	GPLv3+
 URL:		https://getcyberos.org
@@ -13,7 +13,7 @@ BuildRequires:	git
 BuildRequires:	dbusmenu-qt5-devel
 BuildRequires:	qt5-qtbase-devel qt5-qttools qt5-qttools-devel qt5-qtdeclarative-devel qt5-qtquickcontrols2-devel qt5-linguist
 BuildRequires:	kf5-kwindowsystem-devel kf5-kwayland-devel
-BuildRequires:	meuikit
+BuildRequires:	meuikit-devel
 Requires:	qt5-qtbase qt5-qtquickcontrols2
 Requires:	kf5-kwindowsystem kf5-kwayland
 Requires:	meuikit
