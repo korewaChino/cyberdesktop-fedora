@@ -6,7 +6,7 @@ index f3d4e89..38426f4 100644
  import Cyber.Settings 1.0
  
  ItemPage {
-+    appdataPath: String("file://usr/share/cyber-settings")
++    property var appdataPath: String("file://usr/share/cyber-settings")
 +
      headerTitle: qsTr("About")
  
