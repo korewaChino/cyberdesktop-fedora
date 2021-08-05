@@ -1,0 +1,28 @@
+diff --git a/src/qml/AboutPage.qml b/src/qml/AboutPage.qml
+index f3d4e89..38426f4 100644
+--- a/src/qml/AboutPage.qml
++++ b/src/qml/AboutPage.qml
+@@ -5,6 +5,8 @@ import MeuiKit 1.0 as Meui
+ import Cyber.Settings 1.0
+ 
+ ItemPage {
++    appdataPath: String("file://usr/share/cyber-settings")
++
+     headerTitle: qsTr("About")
+ 
+     About {
+@@ -24,12 +26,12 @@ ItemPage {
+                 width: 128
+                 height: width
+                 sourceSize: Qt.size(width, height)
+-                source: "qrc:/images/cyber-logo.svg"
++                source: appdataPath + "/images/logo.svg"
+             }
+ 
+             Label {
+                 Layout.alignment: Qt.AlignTop | Qt.AlignHCenter
+-                text: "CyberOS"
++                text: "Cyber Desktop"
+                 font.pointSize: 24
+                 font.bold: true
+                 bottomPadding: Meui.Units.largeSpacing * 2
