@@ -6,7 +6,7 @@
 
 Name: meuikit
 Version: 1.0.0
-Release: 99%{?dist}
+Release: 100%{?dist}
 Summary: Cyber GUI Library
 
 License: GPLv3+
@@ -14,7 +14,8 @@ URL: https://getcyberos.org
 
 BuildRequires: cmake make
 BuildRequires: extra-cmake-modules
-BuildRequires: qt5-qtbase-devel qt5-qtquickcontrols2-devel qt5-qtx11extras-devel kf5-kwindowsystem-devel cmake make extra-cmake-modules
+BuildRequires: qt5-qtbase-devel qt5-qtquickcontrols2-devel qt5-qtx11extras-devel
+BuildRequires: kf5-kwindowsystem-devel
 
 Source0: https://git.omame.tech/CyberOS/%{name}/archive/%{version}.tar.gz
 
@@ -49,12 +50,12 @@ mv -v %{buildroot}/%{_libdir32}/cmake/MeuiKit %{buildroot}/%{_libdir}/cmake/Meui
 
 %files devel
 %{_libdir}/cmake/MeuiKit
-%{_libdir}/qt5/qml/MeuiKit/
-%{_libdir}/qt5/qml/QtQuick/Controls.2/meui-style/
 
 %files 
 %license LICENSE
 %{_libdir}/libMeuiKit.so
+%{_libdir}/qt5/qml/MeuiKit/
+%{_libdir}/qt5/qml/QtQuick/Controls.2/meui-style/
 
 %changelog
 * Wed Aug 04 2021 rmnscnce <rmnscnce@ya.ru>
