@@ -4,13 +4,14 @@
 
 Name:		cyber-calculator
 Version:	1.0.0
-Release:	99%{?dist}
+Release:	100%{?dist}
 Summary:	Cyber Calculator
 License:	GPLv3+
 URL:		https://getcyberos.org
 BuildRequires:	cmake
 BuildRequires:	qt5-qttools qt5-qttools-devel qt5-qtdeclarative-devel qt5-qtquickcontrols2-devel qt5-linguist
 BuildRequires:	meuikit-devel
+Requires:	meuikit
 Source0:	https://git.omame.tech/CyberOS/cyber-calculator/archive/%{version}.tar.gz
 %description
 Cyber Calculator

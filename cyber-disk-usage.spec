@@ -12,6 +12,7 @@ BuildRequires:	cmake
 BuildRequires:	udisks2-qt5-devel
 BuildRequires:	qt5-qttools qt5-qttools-devel qt5-qtdeclarative-devel qt5-qtquickcontrols2-devel qt5-linguist qt5-qtbase-devel
 BuildRequires:	meuikit-devel
+Requires: meuikit
 Source0:	https://git.omame.tech/CyberOS/cyber-disk-usage/archive/%{version}.tar.gz
 %description
 Disk usage monitor application for Cyber Desktop

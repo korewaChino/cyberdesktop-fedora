@@ -13,6 +13,7 @@ BuildRequires:	qt5-qtbase-devel qt5-qtx11extras-devel qt5-qttools-devel qt5-qtde
 BuildRequires:	kf5-kio-devel
 BuildRequires:	meuikit-devel
 Requires:	taglib
+Requires: meuikit
 Source0:	https://git.omame.tech/CyberOS/cyber-fm/archive/%{version}.tar.gz
 %description
 The file manager for Cyber Desktop

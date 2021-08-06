@@ -2,19 +2,20 @@
 %define _build_id_links none
 %define _disable_source_fetch 0
 
-Name:		cyber-workspace
-Version:	1.0.3
-Release:	99%{?dist}
-Summary:	Cyber Workspace
-License:	GPLv3+
-URL:		https://getcyberos.org
-BuildRequires:	cmake pkgconfig
-BuildRequires:	extra-cmake-modules
-BuildRequires:	polkit-devel polkit-qt5-1-devel libSM-devel xcb-util-devel xcb-util-image-devel libXtst-devel pulseaudio-libs-devel
-BuildRequires:	qt5-qtbase-devel qt5-qtx11extras-devel qt5-qttools-devel qt5-qtdeclarative-devel qt5-qtquickcontrols2-devel qt5-linguist
-BuildRequires:	kf5-kwindowsystem-devel kf5-kwayland-devel
-BuildRequires:	meuikit-devel
-BuildRequires:	QHotkey-devel QHotkey-static
+Name: cyber-workspace
+Version: 1.0.3
+Release: 99%{?dist}
+Summary: Cyber Workspace
+License: GPLv3+
+URL: https://getcyberos.org
+BuildRequires: cmake pkgconfig
+BuildRequires: extra-cmake-modules
+BuildRequires: polkit-devel polkit-qt5-1-devel libSM-devel xcb-util-devel xcb-util-image-devel libXtst-devel pulseaudio-libs-devel
+BuildRequires: qt5-qtbase-devel qt5-qtx11extras-devel qt5-qttools-devel qt5-qtdeclarative-devel qt5-qtquickcontrols2-devel qt5-linguist
+BuildRequires: kf5-kwindowsystem-devel kf5-kwayland-devel
+BuildRequires: meuikit-devel
+BuildRequires: QHotkey-devel QHotkey-static
+Requires: meuikit
 Requires:	xdg-user-dirs
 Source0: https://git.omame.tech/CyberOS/cyber-workspace/archive/%{version}.tar.gz
 Patch0: https://github.com/korewaChino/cyberdesktop-fedora/raw/2b17b331be9e1bfd339df00a9a1495dbfd52e9e0/patches/cyber-workspace/0000-hotkeys-fix-cmakelists.patch

@@ -4,9 +4,9 @@
 
 Name:		cyber-settings
 Version:	1.1.0
-Release:	99%{?dist}
+Release:	100%{?dist}
 Summary:	Cyber Desktop Settings
-License:	GPL-3.0-or-later
+License:	GPLv3+
 URL:		https://getcyberos.org
 BuildRequires:	cmake pkgconfig
 BuildRequires:	extra-cmake-modules
@@ -16,13 +16,17 @@ BuildRequires:	meuikit-devel
 BuildRequires:	libicu-devel
 BuildRequires:	freetype-devel
 BuildRequires:	fontconfig-devel
+Requires: meuikit
 Requires:	libcyber-system
-Source0:	https://git.omame.tech/CyberOS/cyber-settings/archive/%{version}.tar.gz
+Source0:	https://git.omame.tech/CyberOS/%{name}/archive/%{version}.tar.gz
+%define patch0_refspec 6a3850cc3c7b301ab2a5db631ad757d01ffd0a72
+Patch0: https://github.com/korewaChino/cyberdesktop-fedora/raw/%{patch0_refspec}/patches/%{name}/0000-about-external_resource_logo.patch
 %description
 The settings for Cyber Desktop
 
 %prep
 %setup -qn %{name}
+patch -p1 -i %{PATCH0}
 
 %build
 %{set_build_flags}

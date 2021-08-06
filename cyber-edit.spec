@@ -8,8 +8,10 @@ Release:	99%{?dist}
 Summary:	Cyber Text Editor
 License:	GPLv3+
 URL:		https://getcyberos.org
-BuildRequires:	cmake
-BuildRequires:	meuikit-devel qt5-qttools qt5-qttools-devel qt5-qtdeclarative-devel qt5-qtquickcontrols2-devel qt5-linguist qt5-qtx11extras-devel
+BuildRequires: cmake
+BuildRequires: qt5-qtbase-devel qt5-qttools-devel qt5-qtdeclarative-devel qt5-qtquickcontrols2-devel qt5-linguist qt5-qtx11extras-devel
+BuildRequires: meuikit-devel
+Requires: meuikit
 Source0:	https://git.omame.tech/CyberOS/cyber-edit/archive/%{version}.tar.gz
 %description
 Text editor for Cyber Desktop

@@ -17,13 +17,13 @@
 
 Name: QHotkey
 Version: 1.4.2
-Release: 99%{?dist}
+Release: 100%{?dist}
 Summary: A global shortcut/hotkey for Desktop Qt-Applications
 License: BSD-3-Clause
 URL: https://github.com/Skycoder42/QHotkey
 Source: https://github.com/Skycoder42/%{name}/archive/refs/tags/%{version}.tar.gz
-BuildRequires:  cmake pkgconfig
-BuildRequires:  pkgconfig(Qt5Core) pkgconfig(Qt5Widgets) pkgconfig(Qt5X11Extras) pkgconfig(x11)
+BuildRequires: cmake pkgconfig
+BuildRequires: pkgconfig(Qt5Core) pkgconfig(Qt5Widgets) pkgconfig(Qt5X11Extras) pkgconfig(x11)
 
 %description
 The QHotkey is a class that can be used to create hotkeys/global shortcuts,

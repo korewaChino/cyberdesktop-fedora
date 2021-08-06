@@ -9,8 +9,8 @@ Summary:	Cyber Recorder
 License:	GPLv3+
 URL:		https://getcyberos.org
 BuildRequires:	cmake
-BuildRequires:	qt5-qtmultimedia-devel
-BuildRequires:	qt5-qtbase-devel qt5-qttools qt5-qttools-devel qt5-qtdeclarative-devel qt5-qtquickcontrols2-devel qt5-linguist meuikit-devel
+BuildRequires:	qt5-qtbase-devel qt5-qttools qt5-qttools-devel qt5-qtdeclarative-devel qt5-qtmultimedia-devel qt5-qtquickcontrols2-devel qt5-linguist
+Requires: meuikit
 Source0:	https://git.omame.tech/CyberOS/cyber-recorder/archive/%{version}.tar.gz
 %description
 The recorder application for Cyber Desktop
